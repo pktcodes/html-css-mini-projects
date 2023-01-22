@@ -12,6 +12,28 @@
     <title>Edit Task || Starter</title>
   </head>
   <body>
-    <h1>edit task starter</h1>
+    <form class="form single-task-form">
+      <h4>edit task</h4>
+      <div class="form-control">
+        <label for="taskId" class="form-label">task id</label>
+        <p class="task-edit-id">123456789</p>
+      </div>
+      <div class="form-control">
+        <label for="name" class="form-label">name</label>
+        <input
+          type="text"
+          class="form-input task-edit-name"
+          name="name"
+          value="walk the dog"
+        />
+      </div>
+      <div class="form-control">
+        <label for="checkbox" class="form-label">completed</label>
+        <input type="checkbox" class="task-edit-completed" name="checkbox" />
+      </div>
+      <button type="submit" class="btn btn-block task-edit-btn">edit</button>
+      <div class="form-alert text-small">there was an error</div>
+    </form>
+    <a href="./index.html" class="btn back-link">back to tasks</a>
   </body>
 </html>
