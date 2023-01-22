@@ -261,7 +261,7 @@ Task Manager
 .task-form {
   margin-top: 6rem;
 }
-.form h4 {
+.task-form h4 {
   text-align: center;
 }
 .submit-btn {
@@ -361,4 +361,45 @@ Task Links
 }
 .delete-btn {
   color: var(--red-dark);
+}
+
+/* Edit Task */
+.single-task-form {
+  margin-top: 6rem;
+}
+.single-task-form h4 {
+  text-align: center;
+}
+.single-task-form .form-control {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 0 1rem;
+  margin-bottom: 0.75rem;
+}
+.single-task-form .form-label {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+.task-edit-id {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.task-edit-completed {
+  justify-self: start;
+}
+.single-task-form .form-alert {
+  margin-top: 1rem;
+  text-align: center;
+}
+.back-link {
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  text-align: center;
+  margin-top: 6rem;
+  background: var(--black);
+}
+.back-link:hover {
+  background: var(--grey-500);
 }
