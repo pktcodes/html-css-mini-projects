@@ -291,3 +291,74 @@ Task Manager
     width: 175px;
   }
 }
+/*
+=============== 
+Tasks
+===============
+*/
+.tasks-container {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: var(--fixed-width);
+  padding-bottom: 4rem;
+}
+.loading-text {
+  text-transform: capitalize;
+}
+.tasks {
+  display: grid;
+  gap: 1rem;
+}
+.single-task {
+  background: var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: var(--borderRadius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition);
+}
+.single-task:hover {
+  box-shadow: var(--shadow-4);
+}
+.single-task h5 {
+  margin-bottom: 0;
+}
+.single-task .fa-check-circle {
+  margin-left: -1.25rem;
+  margin-right: 1.5rem;
+  color: var(--green-dark);
+  font-size: 1rem;
+  visibility: hidden;
+}
+.task-completed h5 {
+  text-decoration: line-through;
+}
+.task-completed .fa-check-circle {
+  visibility: visible;
+}
+/*
+=============== 
+Task Links
+===============
+*/
+.task-links {
+  display: flex;
+  gap: 0 1rem;
+  align-items: center;
+}
+.edit-link,
+.delete-btn {
+  font-size: 0.75rem;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+.edit-link {
+  color: var(--green-dark);
+}
+.delete-btn {
+  color: var(--red-dark);
+}
