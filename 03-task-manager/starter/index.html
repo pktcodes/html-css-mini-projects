@@ -28,9 +28,46 @@
         />
         <button type="submit" class="btn submit-btn">submit</button>
       </div>
-      <small class="form-alert">there was an error</small>
+      <small class="form-alert text-success">there was an error</small>
     </form>
     <!-- End of Form -->
-    </div>
+
+    <section class="tasks-container">
+      <p class="loading-text">loading...</p>
+      <!-- Tasks -->
+      <div class="tasks">
+        <!-- Single Task -->
+        <article class="single-task">
+          <h5><i class="fas fa-check-circle"></i>first task</h5>
+          <div class="task-links">
+            <!-- Edit Link -->
+            <a href="./task.html" class="edit-link">
+              <i class="fas fa-edit"></i>
+            </a>
+            <!-- Delete Button -->
+            <button type="button" class="delete-btn" data-id="123">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </article>
+        <!-- End of Single Task -->
+
+        <!-- Single Task -->
+        <article class="single-task">
+          <h5><i class="fas fa-check-circle"></i>second task</h5>
+          <div class="task-links">
+            <!-- Edit Link -->
+            <a href="./task.html" class="edit-link">
+              <i class="fas fa-edit"></i>
+            </a>
+            <!-- Delete Button -->
+            <button type="button" class="delete-btn" data-id="123">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </article>
+        <!-- End of Single Task -->
+      </div>
+    </section>
   </body>
 </html>
