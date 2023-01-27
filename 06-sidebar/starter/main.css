@@ -296,8 +296,11 @@ Sidebar
   row-gap: 1rem;
   transition: var(--transition);
   /* Hide Sidebar */
+  transform: translateX(-100%);
 }
-/* Show Sidebar */
+.show-sidebar {
+  transform: translateX(0%);
+}
 .sidebar-header {
   display: flex;
   align-items: center;
