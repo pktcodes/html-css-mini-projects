@@ -257,9 +257,6 @@ ul {
 Modal
 ===============
 */
-.modal-overlay {
-  display: none;
-}
 .hero {
   min-height: 100vh;
   display: grid;
@@ -274,4 +271,56 @@ Modal
   text-align: center;
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
+}
+.modal-overlay {
+  position: fixed;
+  /* top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  inset: 0;
+  /* width: 100%;
+  height: 100%; */
+  text-align: center;
+  /* background: rgba(14, 126, 238, 0.5); */
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  z-index: -10;
+  transition: all 1s ease-in-out;
+  /* display: none; */
+}
+.open-modal {
+  /* display: grid; */
+  visibility: visible;
+  z-index: 10;
+}
+.modal-container {
+  background: white;
+  width: 90vw;
+  max-width: var(--fixed-width);
+  height: 35vh;
+  /* padding: 7rem 0; */
+  display: grid;
+  place-items: center;
+  border-radius: var(--borderRadius);
+  position: relative;
+}
+.modal-container h3 {
+  margin-bottom: 0;
+}
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: transparent;
+  font-size: 2rem;
+  color: var(--red-dark);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.close-btn:hover {
+  transform: rotate(360deg) scale(1.3);
 }
