@@ -5,7 +5,7 @@
 }
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat&display=swap");
 html {
   font-size: 100%;
 } /*16px*/
@@ -42,8 +42,8 @@ html {
   --green-dark: #0f5132;
 
   /* fonts  */
-  --headingFont: 'Roboto', sans-serif;
-  --bodyFont: 'Nunito', sans-serif;
+  --headingFont: "Roboto", sans-serif;
+  --bodyFont: "Nunito", sans-serif;
   --smallText: 0.7em;
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
@@ -257,3 +257,21 @@ ul {
 Modal
 ===============
 */
+.modal-overlay {
+  display: none;
+}
+.hero {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url("./hero.jpeg") center/cover no-repeat;
+}
+.banner {
+  background: var(--white);
+  width: 90vw;
+  max-width: var(--fixed-width);
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+}
