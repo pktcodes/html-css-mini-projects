@@ -16,6 +16,59 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>grocery bud starter</h1>
+    <section class="section-center">
+      <form class="grocery-form">
+        <!-- Form Alert -->
+        <div class="alert alert-danger">please enter value</div>
+        <h4 class="form-title">grocery bud</h4>
+        <!-- Form Row -->
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="e.g. eggs" />
+          <button type="submit" class="btn submit-btn">submit</button>
+        </div>
+      </form>
+
+      <!-- Grocery List -->
+      <div class="grocery-container">
+        <!-- List Items -->
+        <div class="grocery-list">
+          <!-- Single Item -->
+          <article class="grocery-item">
+            <span class="item-title">wash dishes</span>
+            <!-- Buttons -->
+            <div class="btn-container">
+              <!-- Edit Button -->
+              <button type="button" class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <!-- Delete Button -->
+              <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-- End of Single Item -->
+
+          <!-- Single Item -->
+          <article class="grocery-item">
+            <span class="item-title">clean house</span>
+            <!-- Buttons -->
+            <div class="btn-container">
+              <!-- Edit Button -->
+              <button type="button" class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <!-- Delete Button -->
+              <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
+          </article>
+          <!-- End of Single Item -->
+        </div>
+        <!-- Clear Items -->
+        <button type="button" class="btn-block clear-btn">clear items</button>
+      </div>
+    </section>
   </body>
 </html>
