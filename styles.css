@@ -65,7 +65,7 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: var(--white);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
@@ -257,7 +257,41 @@ ul {
 HTML & CSS Mini Projects
 ========================
 */
-a {
+.section {
+  width: 90vw;
+  max-width: 675px;
+  margin: 0 auto;
+  padding: 2rem;
+  overflow: hidden;
+}
+.section-title {
+  color: var(--primary-900);
+}
+.projects {
+  width: 90vw;
+  max-width: 675px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+.project-title {
+  margin: 0;
+}
+.project-title a {
+  color: var(--grey-700);
+  font-size: 1.5rem;
   text-transform: capitalize;
+  margin: 0.5rem 0;
+  /* padding: 0.5rem 0; */
+  /* margin-bottom: 1rem; */
+  transition: var(--transition);
   display: block;
+}
+.project-title a:hover {
+  color: var(--primary-500);
+  background: var(--primary-100);
+  padding: 0.5rem 3.5rem;
+  transform: scale(1.2);
+}
+.project-number {
+  font-weight: bold;
 }
