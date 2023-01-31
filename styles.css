@@ -279,6 +279,7 @@ HTML & CSS Mini Projects
 .project-title a {
   color: var(--grey-700);
   font-size: 1.5rem;
+  letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
   margin: 0.5rem 0;
   /* padding: 0.5rem 0; */
@@ -291,7 +292,4 @@ HTML & CSS Mini Projects
   background: var(--primary-100);
   padding: 0.5rem 3.5rem;
   transform: scale(1.2);
-}
-.project-number {
-  font-weight: bold;
 }
